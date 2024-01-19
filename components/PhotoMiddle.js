@@ -1,19 +1,23 @@
 import styled from "styled-components";
 import Center from "./Center";
+import Image from "next/image";
+// import main from "../styles/svg/main.mp4";
+
 const MiddleDiv = styled.div`
   height: 200px;
 `;
+const NewVideo = styled.video`
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+`;
+
 
 export const PhotoMiddle = () => {
   return (
     <MiddleDiv>
       <Center>
-        <img
-          src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/uploads/NaamaGros/HP_tests/HP_asset_white_bg.png"
-          alt="not found"
-          width="100%"
-          height="180"
-        />
+      <NewVideo autoPlay muted src='/main.mp4'></NewVideo>
       </Center>
     </MiddleDiv>
   );

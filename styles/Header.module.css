@@ -83,3 +83,19 @@
     visibility: visible;
   }
 }
+
+
+
+
+
+/* -----------------footer--------- */
+.text_decoration {
+color: black;
+  text-decoration: none;
+}
+
+.text_decoration:hover {
+  text-decoration: underline;
+}
+
+

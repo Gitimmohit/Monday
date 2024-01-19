@@ -24,6 +24,8 @@ const ProductComponent = ({
     <div className={style.myBox}>
       <div
         style={{
+          maxHeight:"50%",
+          minHeight:"50%",
           height: "auto",
           position: "relative",
           overflow: "hidden",
@@ -40,7 +42,7 @@ const ProductComponent = ({
           }}
         >
           <div>
-            <img src={src} alt={alt} width={width} height={height} />
+            <Image src={src} alt={alt} width={width} height={height} />
             <span style={{ display: "block" }}>{firstDiscription}</span>
           </div>
           <div>

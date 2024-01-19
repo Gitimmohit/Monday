@@ -242,7 +242,7 @@ margin-top: 20px;
 
 /* ----------brand responsive -------start---- */
 .grid {
-  margin-top: 20px;
+  margin-top: 10px;
   grid-template-columns: auto auto auto auto auto auto auto auto auto;
 }
 
@@ -261,7 +261,10 @@ margin-top: 20px;
 /* ---------The Work OS that lets you--------- */
 .maindiv {
   display: flex;
-  /* height: 150px; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 250px;
   margin-top: 20px;
   flex-direction: row;
 }
@@ -278,7 +281,13 @@ margin-top: 20px;
   font-weight: bold;
   text-align: center;
 }
-.mainsecond {
+.mainsecond {  
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  align-items: start;
+
   width: 50%;
   font-size: 22px;
   color: #aaa;
@@ -344,7 +353,14 @@ margin-top: 20px;
 
 .animation {
   display: flex;
-  margin-top: 10px;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  gap: 10px;
+  color: white;
+  /* background-color: white; */
   background: rgb(2, 0, 36);
   background: linear-gradient(
     166deg,
@@ -354,6 +370,36 @@ margin-top: 20px;
   );
   height: auto;
 }
+
+
+.animationdirection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .animation {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .animationdirection {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
 
 /* -----------end animation */
 
@@ -495,6 +541,7 @@ margin-top: 20px;
 }
 
 .ProductComponent {
+  margin-top: 30px;
   /* height: 70%; */
   width: auto;
   padding: 0 20px;
@@ -515,7 +562,7 @@ margin-top: 20px;
 @media only screen and (max-width: 1000px) {
   .ProductComponent {
     flex-wrap: wrap;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
   }
 }

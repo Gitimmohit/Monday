@@ -13,7 +13,7 @@ const AwardFeature = ({ src, first, second,alt,width,height }) => {
     <Award className={style.award}>
       <CenterDiv className={style.CenterDiv}>
 
-        <div style={{minBlockSize: "50%",justifyContent:"center" }}>
+        <div style={{minBlockSize: "50%",justifyContent:"center",minHeight:"80px",maxHeight:"80px" }}>
         <img src={src} alt={alt} width={width} height={height} />
         </div>
 
